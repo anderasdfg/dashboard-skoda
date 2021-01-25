@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/86782526486b329c4bf981abe8749ada/jetified-hellocharts-android-v1.5.8/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/86782526486b329c4bf981abe8749ada/jetified-hellocharts-android-v1.5.8/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/86782526486b329c4bf981abe8749ada/jetified-hellocharts-android-v1.5.8/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3fb8b318b5c4ef3b1c9ec2891a53220f/jetified-hellocharts-android-v1.5.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3fb8b318b5c4ef3b1c9ec2891a53220f/jetified-hellocharts-android-v1.5.8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3fb8b318b5c4ef3b1c9ec2891a53220f/jetified-hellocharts-android-v1.5.8/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

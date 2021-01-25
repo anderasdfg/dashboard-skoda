@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="10dp">
+
+    <TableLayout
+        android:id="@+id/tablaHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:fontFamily="@font/balooda_medium"
+                android:padding="0dip"
+                android:text="Tiempo"
+                android:textColor="@color/black"
+                android:textSize="38dip"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside" />
+
+            <ImageButton
+                android:id="@+id/btnPrueba"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:scaleType="centerInside"
+                android:src="@drawable/skoda_logo_small_black" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTiempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tablaHeader"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/caja_tiempo"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutContainerTiempo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_view_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/balooda_medium"
+                android:gravity="center"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="45dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/balooda_medium"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="@color/white"
+                android:textSize="45dip" />
+
+            <TextView
+                android:id="@+id/text_view_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/balooda_medium"
+                android:gravity="center"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="45dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/balooda_medium"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="@color/white"
+                android:textSize="45dip" />
+
+            <TextView
+                android:id="@+id/text_view_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/balooda_medium"
+                android:gravity="center"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="45dip" />
+            <Button
+                android:id="@+id/btnJugarFragment"
+                android:layout_width="75dip"
+                android:layout_height="75dip"
+                android:layout_below="@+id/layoutContainerTiempo"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/background_btn_radius"
+                android:fontFamily="@font/balooda_medium"
+                android:gravity="center"
+                android:text="Jugar"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tablaActividad"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layoutTiempo"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:fontFamily="@font/balooda_medium"
+                android:padding="0dip"
+                android:text="Actividad"
+                android:textColor="@color/black"
+                android:textSize="38dip"
+                android:textStyle="bold" />
+            <!--
+            <Button
+                android:id="@+id/btnVerResumen"
+                android:fontFamily="@font/balooda_medium"
+                android:padding="3dip"
+                android:gravity="right"
+                android:text="Ver resumen"
+                android:textColor="@color/black"
+                android:background="@color/white">
+            </Button>
+            -->
+        </TableRow>
+
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/tablaActividad"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/caja_grande"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/balooda_medium"
+                android:text="Spin"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="240dp"
+                android:textSize="30dip" />
+
+            <TextView
+                android:id="@+id/txtcantidadSpin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="30dp"
+                android:gravity="center"
+                android:background="@drawable/circulo_spin"
+                android:fontFamily="@font/balooda_medium"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="30dip"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-110dp"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/balooda_medium"
+                android:text="Fuerza"
+                android:textColor="@color/white"
+                android:textSize="30dip" />
+
+            <TextView
+                android:id="@+id/txtCantidadFuerza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circulo_fuerza"
+                android:fontFamily="@font/balooda_medium"
+                android:text="0"
+                android:textColor="@color/black"
+                android:paddingBottom="30dp"
+                android:gravity="center"
+                android:textSize="30dip"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtCantidadVelocidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-60dp"
+                android:layout_marginLeft="190dp"
+                android:background="@drawable/circulo_velocidad"
+                android:fontFamily="@font/balooda_medium"
+                android:text="0"
+                android:gravity="center"
+                android:paddingBottom="30dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/balooda_medium"
+                android:text="Velocidad"
+                android:layout_marginLeft="202dp"
+                android:textColor="@color/white"
+                android:textSize="30dip" />
+
+            <TextView
+                android:id="@+id/txtCantidadGolpes"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-60dp"
+                android:gravity="center"
+                android:background="@drawable/circulo_golpes"
+                android:fontFamily="@font/balooda_medium"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textTiempoJuego"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="-30dp"
+                android:fontFamily="@font/balooda_medium"
+                android:text="00:00.00"
+                android:textColor="@color/white"
+                android:textSize="30dip" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
+

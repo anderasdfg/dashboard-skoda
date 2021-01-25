@@ -61,7 +61,7 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
     private Button btnJugarFragment;
     ImageButton btnEncenderBluettoth, btnPrueba;
     boolean isOn = false;
-    TextView txtCronometro, txtTiempoJuego, txtSpin, txtGolpes,txtFuerza,txtVelocidad; //, txtFecha;
+    TextView txtCronometro, txtSpin, txtGolpes,txtFuerza,txtVelocidad,textViewHour,textViewMinute, textViewSecond; //, txtFecha;
     Thread cronos;
     int mili = 0, seg = 0, minutos = 0;
     Handler h = new Handler();
@@ -73,6 +73,8 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
     static ArrayList<Resultados> resultados = new ArrayList();
     int golpes = 0;
     double fuerza = 0 , spin = 0, velocidad = 0;
+    private int seconds = 0;
+    private boolean isPlaying = false;
 
     String arraySpin [] = new String[10000];
     String arrayFuerza [] = new String[10000];
@@ -174,21 +176,21 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
         //Button btnVerResumen = (Button) view.findViewById(R.id.btnVerResumen);
         btnEncenderBluettoth = (ImageButton) view.findViewById(R.id.encenderBluetooth);
         btnPrueba = (ImageButton) view.findViewById(R.id.btnPrueba);
-        txtCronometro = (TextView) view.findViewById(R.id.txtTiempo);
-        txtTiempoJuego = (TextView) view.findViewById(R.id.textTiempoJuego);
+        //txtCronometro = (TextView) view.findViewById(R.id.txtTiempo);
+        //txtTiempoJuego = (TextView) view.findViewById(R.id.textTiempoJuego);
+        textViewHour = (TextView) view.findViewById(R.id.text_view_hour);
+        textViewMinute = (TextView) view.findViewById(R.id.text_view_minute);
+        textViewSecond = (TextView) view.findViewById(R.id.text_view_second);
         txtSpin = (TextView) view.findViewById(R.id.txtcantidadSpin);
         txtGolpes = (TextView) view.findViewById(R.id.txtCantidadGolpes);
         txtFuerza = (TextView) view.findViewById(R.id.txtCantidadFuerza);
         txtVelocidad = (TextView) view.findViewById(R.id.txtCantidadVelocidad);
-        //txtFecha = (TextView) view.findViewById(R.id.txtFechaCabecera);
-        //String fecha = new SimpleDateFormat("EEEE ', ' dd MMMM ").format(new Date());
-        //txtFecha.setText(fecha);
 
-        txtCronometro.setText("00:00.00");
+        //txtCronometro.setText("00:00.00");
 
         //View sendBtn = view.findViewById(R.id.send_btn);
         //sendBtn.setOnClickListener(v -> send(sendText.getText().toString()));
-        btnJugarFragment.setOnClickListener(v -> ejecutarJugar());
+        btnJugarFragment.setOnClickListener(v -> btnPlayPause());
 
         /*
         btnVerResumen.setOnClickListener(new View.OnClickListener() {
@@ -395,6 +397,16 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
         //receiveText.append(spn);
         //Log.e("Receive text en status", receiveText.getText().toString());
     }
+    private Handler handler = new Handler();
+
+    private Runnable runnable = new Runnable() {
+        @Override
+        public void run() {
+            seconds ++;
+            changeText();
+            handler.postDelayed(this, 1000);
+        }
+    };
 
     /*
      * SerialListener
@@ -421,7 +433,7 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
         status("connection lost: " + e.getMessage());
         disconnect();
     }
-
+    /*
     public void ejecutarJugar(){
         Calendar c = Calendar.getInstance();
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -449,7 +461,7 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
             golpes = 0;
             resultados.clear();
 
-            txtTiempoJuego.setText(tiempo);
+            //txtTiempoJuego.setText(tiempo);
         }
         cronos = new Thread(new Runnable() {
             @Override
@@ -501,6 +513,60 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
             }
         });
         cronos.start();
+    }*/
+
+    private void btnRefresh() {
+        this.seconds = -1;
+    }
+
+    private void btnPlayPause() {
+        Calendar c = Calendar.getInstance();
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String formattedDate = df.format(c.getTime());
+
+        if(!isPlaying){
+            btnRefresh();
+            start();
+            resetarDatos();
+            send("1");
+            contadorGolpes = 0;
+        }else{
+            registrarInicioJuego(codigoUsuario,tiempo, formattedDate);  //registra el final del juego
+            insertarDataJuego(); //resultados
+            send("0");
+            pause();
+        }
+        isPlaying = !isPlaying;
+        btnJugarFragment.setText(isPlaying ? "Detener" : "Jugar");
+    }
+
+    private void start() {
+        handler.postDelayed(runnable, 1000);
+    }
+
+    private void pause() {
+        handler.removeCallbacks(runnable);
+    }
+
+    private void resetarDatos(){
+        txtFuerza.setText("0");
+        txtGolpes.setText("0");
+        txtSpin.setText("0");
+        txtVelocidad.setText("0");
+    }
+
+    private void changeText() {
+        int seconds = this.seconds % 60;
+        int minutes = (this.seconds / 60) % 60;
+        int hour = this.seconds / 3600;
+
+        String secondsFormatted = (seconds <= 9 ? "0" : "") + String.valueOf(seconds);
+        String minutesFormatted = (minutes <= 9 ? "0" : "") + String.valueOf(minutes);
+        String hoursFormatted = (hour <= 9 ? "0" : "") + String.valueOf(hour);
+
+        textViewSecond.setText(secondsFormatted);
+        textViewMinute.setText(minutesFormatted);
+        textViewHour.setText(hoursFormatted);
     }
 
     public void registrarInicioJuego(int codigoUsuario, String tiempo, String fecha){

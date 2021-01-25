@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SimpleBluetoothLeTerminal-master.iml" filepath="$PROJECT_DIR$/.idea/modules/SimpleBluetoothLeTerminal-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SimpleBluetoothLeTerminal-master.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SimpleBluetoothLeTerminal-master.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hellocharts-library-1.5.8/SimpleBluetoothLeTerminal-master.hellocharts-library-1.5.8.iml" filepath="$PROJECT_DIR$/.idea/modules/hellocharts-library-1.5.8/SimpleBluetoothLeTerminal-master.hellocharts-library-1.5.8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dashboard-skoda.iml" filepath="$PROJECT_DIR$/.idea/modules/dashboard-skoda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/dashboard-skoda.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/dashboard-skoda.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hellocharts-library-1.5.8/dashboard-skoda.hellocharts-library-1.5.8.iml" filepath="$PROJECT_DIR$/.idea/modules/hellocharts-library-1.5.8/dashboard-skoda.hellocharts-library-1.5.8.iml" />
     </modules>
   </component>
 </project>

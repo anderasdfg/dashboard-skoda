@@ -43,41 +43,91 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tablaHeader"
-        android:background="@drawable/caja_tiempo"
-        android:layout_marginTop="-15dp"
         android:layout_marginLeft="15dp"
+        android:layout_marginTop="-10dp"
         android:layout_marginRight="15dp"
+        android:background="@drawable/caja_tiempo"
         android:gravity="center"
         android:orientation="vertical">
-        <TableLayout
+
+        <LinearLayout
+            android:id="@+id/layoutContainerTiempo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp">
-            <TableRow>
-                <TextView
-                    android:id="@+id/txtTiempo"
-                    android:fontFamily="@font/balooda_medium"
-                    android:padding="3dip"
-                    android:text="00:00.00"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="45dip"
-                    android:textStyle="bold" />
-                <Button
-                    android:id="@+id/btnJugarFragment"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_marginTop="-8dp"
-                    android:layout_marginLeft="3dp"
-                    android:text="Jugar"
-                    android:textColor="@color/black"
-                    android:textAllCaps="false"
-                    android:textSize="20dp"
-                    android:background="@drawable/circulo_golpes"
-                    android:fontFamily="@font/balooda_medium"/>
-            </TableRow>
-        </TableLayout>
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_view_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/balooda_medium"
+                android:gravity="center"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="45dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/balooda_medium"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="@color/white"
+                android:textSize="45dip" />
+
+            <TextView
+                android:id="@+id/text_view_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/balooda_medium"
+                android:gravity="center"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="45dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/balooda_medium"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="@color/white"
+                android:textSize="45dip" />
+
+            <TextView
+                android:id="@+id/text_view_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/balooda_medium"
+                android:gravity="center"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="45dip" />
+            <Button
+                android:id="@+id/btnJugarFragment"
+                android:layout_width="75dip"
+                android:layout_height="75dip"
+                android:layout_below="@+id/layoutContainerTiempo"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/background_btn_radius"
+                android:fontFamily="@font/balooda_medium"
+                android:gravity="center"
+                android:text="Jugar"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20dip" />
+        </LinearLayout>
     </LinearLayout>
 
     <TableLayout
@@ -214,17 +264,6 @@
                 android:textColor="@color/black"
                 android:textSize="30dip"
                 android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textTiempoJuego"
-                android:layout_width="144dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="210dp"
-                android:layout_marginTop="-30dp"
-                android:fontFamily="@font/balooda_medium"
-                android:text="00:00.00"
-                android:textColor="@color/white"
-                android:textSize="30dip" />
 
         </LinearLayout>
     </ScrollView>

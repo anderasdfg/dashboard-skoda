@@ -22,7 +22,9 @@
         android:debuggable="true"
         android:icon="@mipmap/icono"
         android:label="@string/app_name"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="de.kai_morich.simple_bluetooth_le_terminal.Cronometro" />
         <activity android:name="de.kai_morich.simple_bluetooth_le_terminal.Rendimiento" />
         <activity android:name="de.kai_morich.simple_bluetooth_le_terminal.Login" />
         <activity android:name="de.kai_morich.simple_bluetooth_le_terminal.Dashboard" />
