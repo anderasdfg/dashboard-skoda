@@ -41,8 +41,8 @@ de/kai_morich/simple_bluetooth_le_terminal/TerminalFragment.java
  de.kai_morich.simple_bluetooth_le_terminal.TerminalFragment$Connected
 de/kai_morich/simple_bluetooth_le_terminal/VariablesGlobales.java
  de.kai_morich.simple_bluetooth_le_terminal.VariablesGlobales
-de/kai_morich/simple_bluetooth_le_terminal/Rendimiento.java
- de.kai_morich.simple_bluetooth_le_terminal.Rendimiento
+de/kai_morich/simple_bluetooth_le_terminal/Resultados.java
+ de.kai_morich.simple_bluetooth_le_terminal.Resultados
 de/kai_morich/simple_bluetooth_le_terminal/MainActivity.java
  de.kai_morich.simple_bluetooth_le_terminal.MainActivity
 de/kai_morich/simple_bluetooth_le_terminal/SerialService.java
@@ -51,10 +51,10 @@ de/kai_morich/simple_bluetooth_le_terminal/SerialService.java
  de.kai_morich.simple_bluetooth_le_terminal.SerialService$QueueItem
  de.kai_morich.simple_bluetooth_le_terminal.SerialService$QueueType
  de.kai_morich.simple_bluetooth_le_terminal.SerialService$SerialBinder
-de/kai_morich/simple_bluetooth_le_terminal/Resultados.java
- de.kai_morich.simple_bluetooth_le_terminal.Resultados
 de/kai_morich/simple_bluetooth_le_terminal/Cronometro.java
  de.kai_morich.simple_bluetooth_le_terminal.Cronometro
+de/kai_morich/simple_bluetooth_le_terminal/Rendimiento.java
+ de.kai_morich.simple_bluetooth_le_terminal.Rendimiento
 de/kai_morich/simple_bluetooth_le_terminal/SplashScreen.java
  de.kai_morich.simple_bluetooth_le_terminal.SplashScreen
  de.kai_morich.simple_bluetooth_le_terminal.SplashScreen$1

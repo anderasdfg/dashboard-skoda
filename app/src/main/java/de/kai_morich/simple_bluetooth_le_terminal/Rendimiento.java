@@ -96,7 +96,6 @@ public class Rendimiento extends AppCompatActivity {
         data.setAxisXBottom(axis);
 
         Axis yAxis = new Axis();
-        // yAxis.setName("Sales in millions");
         yAxis.setTextColor(Color.parseColor("#FFFFFF"));
         yAxis.setTextSize(8);
         data.setAxisYLeft(yAxis);

@@ -32,12 +32,12 @@
         "source": "D:\\2021\\Android\\Proyectos\\SKODA\\dashboard-skoda\\app\\src\\main\\res\\drawable\\circulo_datos.png"
     },
     {
-        "merged": "D:\\2021\\Android\\Proyectos\\SKODA\\dashboard-skoda\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_cronometro.xml.flat",
-        "source": "D:\\2021\\Android\\Proyectos\\SKODA\\dashboard-skoda\\app\\src\\main\\res\\layout\\activity_cronometro.xml"
-    },
-    {
         "merged": "D:\\2021\\Android\\Proyectos\\SKODA\\dashboard-skoda\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "D:\\2021\\Android\\Proyectos\\SKODA\\dashboard-skoda\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\2021\\Android\\Proyectos\\SKODA\\dashboard-skoda\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_cronometro.xml.flat",
+        "source": "D:\\2021\\Android\\Proyectos\\SKODA\\dashboard-skoda\\app\\src\\main\\res\\layout\\activity_cronometro.xml"
     },
     {
         "merged": "D:\\2021\\Android\\Proyectos\\SKODA\\dashboard-skoda\\app\\build\\intermediates\\res\\merged\\debug\\drawable_card_black.png.flat",

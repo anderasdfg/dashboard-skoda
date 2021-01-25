@@ -23,7 +23,7 @@ public class SplashScreen extends AppCompatActivity {
 
         new Handler().postDelayed(new Runnable(){
             public void run(){
-                Intent intent = new Intent(SplashScreen.this, Cronometro.class);
+                Intent intent = new Intent(SplashScreen.this, Rendimiento.class);
                 startActivity(intent);
                 finish();
             };
