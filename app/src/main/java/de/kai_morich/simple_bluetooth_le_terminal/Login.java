@@ -39,6 +39,8 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 CheckConnection();
+                btnIniciar.setEnabled(false);
+                btnIniciar.setText("Iniciando...");
                 InciarSesion(txtusuario.getText().toString(),txtclave.getText().toString());
             }
         });
@@ -57,9 +59,7 @@ public class Login extends AppCompatActivity {
         }
     }
 
-
-
-    //Crearemos la Función para Iniciar Sesion de Postgresql
+    //Crearemos la Función para Iniciar Sesion de SQL
     public  void InciarSesion(String usuario, String clave){
         Log.e("ASK", usuario + " - " + clave);
 
@@ -94,6 +94,8 @@ public class Login extends AppCompatActivity {
                             startActivityForResult(intent, 0);
 
                         }else{
+                            btnIniciar.setEnabled(true);
+                            btnIniciar.setText("Iniciar sesión");
                             Toast.makeText(getApplicationContext(), "Usuario o contraseña incorrectos", Toast.LENGTH_LONG).show();
                             Log.e("ASK", "ta mal");
                             Log.e("ASK", rs.getString("usuario") + " - " +  rs.getString("clave"));
@@ -101,8 +103,9 @@ public class Login extends AppCompatActivity {
 
                     }
                     Log.e("ASK", "----------------------------");
-                    // Toast.makeText(getApplicationContext(), "Query ejecutada OK", Toast.LENGTH_LONG).show();
                 }else{
+                    btnIniciar.setEnabled(true);
+                    btnIniciar.setText("Iniciar sesión");
                     Toast.makeText(getApplicationContext(), "Ocurrió un error, intente nuevamente más tarde", Toast.LENGTH_LONG).show();
                 }
             }catch(Exception e){
@@ -110,6 +113,8 @@ public class Login extends AppCompatActivity {
                 Log.e("ASK", e.getMessage());
             }
         }else{
+            btnIniciar.setEnabled(true);
+            btnIniciar.setText("Iniciar sesión");
             Toast.makeText(getApplicationContext(), "Debe completar todos los campos", Toast.LENGTH_LONG).show();
         }
 
