@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF7C5E</color>
+    <color name="colorPrimaryDark">#FF7C5E</color>
+    <color name="colorAccent">#C6FD01</color>
+
+    <color name="colorRecieveText">#00FF00</color>
+    <color name="colorSendText">#82CAFF</color>
+    <color name="colorStatusText">#FFDB58</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="salmon">#FF7C5E</color>
+    <color name="green_acid">#C6FD01</color>
+    <color name="yellow">#FFF500</color>
+</resources>

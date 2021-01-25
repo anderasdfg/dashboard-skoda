@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="10dp">
+
+    <TableLayout
+        android:id="@+id/tablaHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:fontFamily="@font/balooda_medium"
+                android:padding="0dip"
+                android:text="Tiempo"
+                android:textColor="@color/black"
+                android:textSize="38dip"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside" />
+
+            <ImageButton
+                android:id="@+id/btnPrueba"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:scaleType="centerInside"
+                android:src="@drawable/skoda_logo_small_black" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTiempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tablaHeader"
+        android:background="@drawable/caja_tiempo"
+        android:layout_marginTop="-15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtTiempo"
+                    android:fontFamily="@font/balooda_medium"
+                    android:padding="3dip"
+                    android:text="00:00.00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="45dip"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/btnJugarFragment"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="-8dp"
+                    android:layout_marginLeft="3dp"
+                    android:text="Jugar"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:textSize="20dp"
+                    android:background="@drawable/circulo_golpes"
+                    android:fontFamily="@font/balooda_medium"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tablaActividad"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layoutTiempo"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:fontFamily="@font/balooda_medium"
+                android:padding="0dip"
+                android:text="Actividad"
+                android:textColor="@color/black"
+                android:textSize="38dip"
+                android:textStyle="bold" />
+            <!--
+            <Button
+                android:id="@+id/btnVerResumen"
+                android:fontFamily="@font/balooda_medium"
+                android:padding="3dip"
+                android:gravity="right"
+                android:text="Ver resumen"
+                android:textColor="@color/black"
+                android:background="@color/white">
+            </Button>
+            -->
+        </TableRow>
+
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/tablaActividad"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/caja_grande"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/balooda_medium"
+                android:text="Spin"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="240dp"
+                android:textSize="30dip" />
+
+            <TextView
+                android:id="@+id/txtcantidadSpin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="30dp"
+                android:gravity="center"
+                android:background="@drawable/circulo_spin"
+                android:fontFamily="@font/balooda_medium"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="30dip"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-110dp"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/balooda_medium"
+                android:text="Fuerza"
+                android:textColor="@color/white"
+                android:textSize="30dip" />
+
+            <TextView
+                android:id="@+id/txtCantidadFuerza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circulo_fuerza"
+                android:fontFamily="@font/balooda_medium"
+                android:text="0"
+                android:textColor="@color/black"
+                android:paddingBottom="30dp"
+                android:gravity="center"
+                android:textSize="30dip"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtCantidadVelocidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-60dp"
+                android:layout_marginLeft="190dp"
+                android:background="@drawable/circulo_velocidad"
+                android:fontFamily="@font/balooda_medium"
+                android:text="0"
+                android:gravity="center"
+                android:paddingBottom="30dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/balooda_medium"
+                android:text="Velocidad"
+                android:layout_marginLeft="202dp"
+                android:textColor="@color/white"
+                android:textSize="30dip" />
+
+            <TextView
+                android:id="@+id/txtCantidadGolpes"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-60dp"
+                android:gravity="center"
+                android:background="@drawable/circulo_golpes"
+                android:fontFamily="@font/balooda_medium"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textTiempoJuego"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="-30dp"
+                android:fontFamily="@font/balooda_medium"
+                android:text="00:00.00"
+                android:textColor="@color/white"
+                android:textSize="30dip" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:minHeight="75dip"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/receive_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0"
+            android:background="@color/black"
+            android:freezesText="true"
+            android:gravity="bottom"
+            android:scrollbars="vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/black"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/send_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:inputType="text|textNoSuggestions"
+                android:singleLine="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

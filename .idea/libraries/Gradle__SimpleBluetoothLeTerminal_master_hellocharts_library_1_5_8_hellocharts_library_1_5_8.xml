@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: SimpleBluetoothLeTerminal-master.hellocharts-library-1.5.8.hellocharts-library-1.5.8">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/hellocharts-library-1.5.8/hellocharts-library-1.5.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

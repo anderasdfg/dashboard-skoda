@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="10dp"
+    tools:context=".Rendimiento">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        >
+
+        <TableRow>
+            <!--
+            <TextView
+                android:fontFamily="@font/balooda_medium"
+                android:text="&lt;"
+                android:textColor="@color/salmon"
+                />
+                -->
+            <TextView
+                android:id="@+id/txtFechaDiario"
+                android:fontFamily="@font/balooda_medium"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="MIERCOLES, 2 DIC"
+                android:textColor="@color/black" />
+            <!--
+            <TextView
+                android:fontFamily="@font/balooda_medium"
+                android:text=">"
+                android:textColor="@color/salmon" />
+             -->
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="0dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:fontFamily="@font/balooda_medium"
+                android:padding="0dip"
+                android:text="Diario"
+                android:textColor="@color/black"
+                android:textSize="48dip"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside" />
+
+            <ImageButton
+                android:id="@+id/btnSemanal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="30dp"
+                android:scaleType="centerInside"
+                android:background="@color/white"
+                android:src="@drawable/icon_calendario" />
+        </TableRow>
+    </TableLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/layoutSpin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/card_black"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtTituloSpin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/balooda_medium"
+                    android:padding="0dip"
+                    android:text="Spin"
+                    android:textColor="@color/white"
+                    android:textSize="24dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtSpinDiario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/balooda_medium"
+                    android:text="316.25 RPM"
+                    android:textColor="@color/green_acid"
+                    android:textSize="34dip"
+                    android:textStyle="bold" />
+
+                <lecho.lib.hellocharts.view.LineChartView
+                    android:id="@+id/chart"
+                    android:paddingRight="30dp"
+                    android:layout_width="340dp"
+                    android:layout_height="95dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutFuerza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutSpin"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/card_black"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTituloFuerza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/balooda_medium"
+                    android:padding="0dip"
+                    android:text="Fuerza"
+                    android:textColor="@color/white"
+                    android:textSize="24dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtFuerzaDiaria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/balooda_medium"
+                    android:text="201.89 N"
+                    android:textColor="@color/yellow"
+                    android:textSize="34dip"
+                    android:textStyle="bold" />
+                <lecho.lib.hellocharts.view.LineChartView
+                    android:id="@+id/chart2"
+                    android:paddingRight="30dp"
+                    android:layout_width="340dp"
+                    android:layout_height="95dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutVelocidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutFuerza"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/card_black"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTituloVelocidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/balooda_medium"
+                    android:padding="0dip"
+                    android:text="Velocidad"
+                    android:textColor="@color/white"
+                    android:textSize="24dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtVelocidadDiaria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/balooda_medium"
+                    android:text="77.21 KM/h"
+                    android:textColor="@color/salmon"
+                    android:textSize="34dip"
+                    android:textStyle="bold" />
+
+                <lecho.lib.hellocharts.view.LineChartView
+                    android:id="@+id/chart3"
+                    android:paddingRight="30dp"
+                    android:layout_width="340dp"
+                    android:layout_height="95dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

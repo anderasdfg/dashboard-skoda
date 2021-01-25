@@ -1,0 +1,198 @@
+[
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_skoda.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable-xxxhdpi\\skoda.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash_screen.xml.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circulo_fuerza.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\circulo_fuerza.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circle_green.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\circle_green.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dashboard.xml.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\layout\\activity_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_skoda.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable-xhdpi\\skoda.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_skoda.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable-hdpi\\skoda.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_jugar.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\btn_jugar.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_email_white_24dp.xml.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\ic_email_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_devices.xml.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\menu\\menu_devices.xml"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circulo_datos.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\circulo_datos.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_card_black.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\card_black.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_skodalogin.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable-xhdpi\\skodalogin.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_skodalogin.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\skodalogin.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circulo_spin.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\circulo_spin.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_skoda_logo_small_black.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\skoda_logo_small_black.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_skoda.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\skoda.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_caja_tiempo.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\caja_tiempo.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_terminal.xml.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\layout\\fragment_terminal.xml"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_rounded_green.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\btn_rounded_green.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_caja_grande.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\caja_grande.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circulo_golpes.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\circulo_golpes.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_text_box.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\text_box.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_device_list_header.xml.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\layout\\device_list_header.xml"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rendimiento.xml.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\layout\\activity_rendimiento.xml"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_device_list_item.xml.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\layout\\device_list_item.xml"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_skoda.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable-mdpi\\skoda.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_skodalogin.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable-xxhdpi\\skodalogin.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_skodalogin.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable-hdpi\\skodalogin.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_skodalogin.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable-mdpi\\skodalogin.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_send_white_24dp.xml.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\ic_send_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_skodalogin.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable-xxxhdpi\\skodalogin.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circulo_velocidad.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\circulo_velocidad.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bluetooth_icon_small.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\bluetooth_icon_small.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_lock_white_24dp.xml.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\ic_lock_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_calendario.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\icon_calendario.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\font_balooda_medium.ttf.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\font\\balooda_medium.ttf"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_battery_icon.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\battery_icon.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_icono.png.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\icono.png"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_delete_white_24dp.xml.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\drawable\\ic_delete_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_terminal.xml.flat",
+        "source": "C:\\Code\\trabajo\\SimpleBluetoothLeTerminal-master\\app\\src\\main\\res\\menu\\menu_terminal.xml"
+    }
+]

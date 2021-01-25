@@ -1,0 +1,2 @@
+include ':hellocharts-library-1.5.8'
+include ':app'

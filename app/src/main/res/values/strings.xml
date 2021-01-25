@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SKODA</string>
+    <string name="devices">Dispositivos</string>
+
+    <string name="location_permission_title">Se requiere permiso de ubicación</string>
+    <string name="location_permission_message">Esta aplicación no usa información de ubicación, pero la búsqueda de dispositivos Bluetooth LE requiere este permiso</string>
+
+    <string name="location_denied_title">Permiso de ubicación denegado</string>
+    <string name="location_denied_message">omo no se ha otorgado el permiso de ubicación, esta aplicación no puede buscar dispositivos Bluetooth LE.</string>
+    <string name="pairing_request">EMPAREJAMIENTO solicitado \ n-> Realice los pasos de emparejamiento. Conectar de nuevo</string>
+
+</resources>

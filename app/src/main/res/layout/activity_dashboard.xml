@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="10dp"
+    tools:context=".Dashboard">
+
+    <TableLayout
+        android:id="@+id/tablaHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:stretchColumns="1">
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtFechaCabecera"
+                android:fontFamily="@font/balooda_medium"
+                android:padding="3dip"
+                android:text="MARTES, 17 NOV"
+                android:textColor="@color/black" />
+            <TextView
+                android:fontFamily="@font/balooda_medium"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="100%"
+                android:textColor="@color/black" />
+            <ImageButton
+                android:id="@+id/btnBatery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:background="@color/white"
+                android:src="@drawable/battery_icon" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:fontFamily="@font/balooda_medium"
+                android:padding="0dip"
+                android:text="Tiempo"
+                android:textColor="@color/black"
+                android:textSize="48dip"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside" />
+
+            <ImageButton
+                android:id="@+id/btnPrueba"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:scaleType="centerInside"
+                android:src="@drawable/skoda_logo_small_black" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTiempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tablaHeader"
+        android:background="@drawable/caja_tiempo"
+        android:layout_marginTop="-15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/txtTiempo"
+                    android:fontFamily="@font/balooda_medium"
+                    android:padding="3dip"
+                    android:text="00:00.00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="48dip"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnJugar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="-8dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Jugar"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:textSize="20dp"
+                    android:background="@drawable/circulo_golpes"
+                    android:fontFamily="@font/balooda_medium"/>
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tablaActividad"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layoutTiempo"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:fontFamily="@font/balooda_medium"
+                android:padding="0dip"
+                android:text="Actividad"
+                android:textColor="@color/black"
+                android:textSize="48dip"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btnVerResumen"
+                android:fontFamily="@font/balooda_medium"
+                android:padding="3dip"
+                android:gravity="right"
+                android:text="Ver resumen"
+                android:textColor="@color/black"
+                android:background="@color/white">
+
+            </Button>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/tablaActividad"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/caja_grande"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/balooda_medium"
+                android:text="Spin"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="240dp"
+                android:textSize="30dip" />
+
+            <TextView
+                android:id="@+id/txtcantidadSpin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circulo_spin"
+                android:fontFamily="@font/balooda_medium"
+                android:paddingTop="40dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="48dip"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-110dp"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/balooda_medium"
+                android:text="Fuerza"
+                android:textColor="@color/white"
+                android:textSize="30dip" />
+
+            <TextView
+                android:id="@+id/txtCantidadFuerza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circulo_fuerza"
+                android:fontFamily="@font/balooda_medium"
+                android:paddingTop="40dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="48dip"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtCantidadVelocidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-60dp"
+                android:layout_marginLeft="190dp"
+                android:background="@drawable/circulo_velocidad"
+                android:fontFamily="@font/balooda_medium"
+                android:paddingTop="40dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="48dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/balooda_medium"
+                android:text="Velocidad"
+                android:layout_marginLeft="200dp"
+                android:textColor="@color/white"
+                android:textSize="30dip" />
+
+            <TextView
+                android:id="@+id/txtCantidadGolpes"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-60dp"
+                android:paddingTop="15dp"
+                android:background="@drawable/circulo_golpes"
+                android:fontFamily="@font/balooda_medium"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="48dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textTiempoJuego"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="-30dp"
+                android:fontFamily="@font/balooda_medium"
+                android:text="00:00.00"
+                android:textColor="@color/white"
+                android:textSize="30dip" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="75dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:minHeight="75dip"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/encenderBluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/bluetooth_icon_small"
+            android:fontFamily="@font/balooda_medium"
+            android:text="Ingresar"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnIniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@color/white"
+            android:fontFamily="@font/balooda_medium"
+            android:text="Conectar"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>
+
